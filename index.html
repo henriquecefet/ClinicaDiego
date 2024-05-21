@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentista Diego Alonso</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Dentista Diego Alonso</div>
+            <button class="menu-toggle" aria-label="Abrir Menu">
+                <span class="menu-icon"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <div class="hero">
+            <h1>Bem-vindo à Dentista Diego Alonso</h1>
+            <p>Sua saúde bucal em boas mãos</p>
+            <button onclick="scrollToSection('contact')">Agende uma consulta</button>
+        </div>
+    </section>
+    
+    <section id="services">
+        <h2>Nossos Serviços</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>Limpeza Dental</h3>
+                <p>Profissional e cuidadosa para manter seus dentes saudáveis.</p>
+            </div>
+            <div class="service">
+                <h3>Ortodontia</h3>
+                <p>Tratamentos ortodônticos para alinhar seus dentes.</p>
+            </div>
+            <div class="service">
+                <h3>Implantes Dentários</h3>
+                <p>Recupere seu sorriso com nossos implantes de alta qualidade.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>Sobre Mim</h2>
+        <p>Sou um dentista recém-formado dedicado a proporcionar os melhores cuidados dentários. Eu estou sempre pronto para atender você com excelência e dedicação.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contato</h2>
+        <form id="contact-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("f9VSpWoVtCoiIwuC7"); // Substitua "YOUR_USER_ID" pelo seu userID do EmailJS
+        })();
+    </script>
+
+    
+    <footer>
+        <p>&copy; 2024 Dentista Diego Alonso. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
+
