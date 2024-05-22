@@ -62,7 +62,12 @@
             <input type="email" id="email" name="email" required>
             <label for="message">Mensagem:</label>
             <textarea id="message" name="message" required></textarea>
-            <button type="submit">Enviar</button>
+            <div class="button-container">
+                <button type="submit">Enviar</button>
+                <a id="whatsapp-link" href="#">
+                    <img src="whatsapp-logo.png" alt="Enviar via WhatsApp" style="width: 50px; height: 50px;">
+                </a>
+            </div>
         </form>
     </section>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
