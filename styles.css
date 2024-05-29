@@ -224,24 +224,30 @@ body {
     font-family: Arial, sans-serif;
 }
 
+#about {
+    text-align: center; /* Centraliza o texto */
+}
+
 .about-wrapper {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
+    display: flex; /* Ativa o flexbox */
+    justify-content: center; /* Centraliza os elementos filhos horizontalmente */
+    align-items: center; /* Centraliza os elementos filhos verticalmente */
 }
 
 .about-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 800px;
-    width: 100%;
+    display: flex; /* Ativa o flexbox */
+    flex-direction: row; /* Coloca os elementos lado a lado */
 }
 
 .about-text {
-    flex: 1;
-    margin-right: 20px; /* Espaço entre o texto e a imagem */
+    flex: 1; /* Ocupa o espaço disponível */
 }
+
+.about-image {
+    flex: 1; /* Ocupa o espaço disponível */
+    margin-left: 20px; /* Espaçamento entre o texto e a imagem */
+}
+
 
 .about-image img {
     max-width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
