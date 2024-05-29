@@ -220,4 +220,34 @@ form button:hover {
     align-items: center;
     justify-content: center;
 }
+body {
+    font-family: Arial, sans-serif;
+}
+
+.about-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    width: 100%;
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 20px; /* Espaço entre o texto e a imagem */
+}
+
+.about-image img {
+    max-width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    border-radius: 8px; /* Adiciona bordas arredondadas à imagem, opcional */
+}
+
+
 
